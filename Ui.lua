@@ -79,14 +79,17 @@ local function AddButton(name, callback)
 end
 
 -- Example: add buttons easily
-AddButton("Hello Dev!", function()
-	print("Button pressed")
+AddButton("dex explorer (pro)", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/lucent-hub/Commands/refs/heads/main/Dex%20explorer.lua"))()
 end)
 
-AddButton("Another Button", function()
-	print("Second button pressed")
+AddButton("Rspy (pro)", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/lucent-hub/Commands/refs/heads/main/Remote%20spy%20%2B%2B"))()
 end)
 
+AddButton("anim maker (client side)", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer352/Test4/refs/heads/main/Animation%20Maker"))()
+end)
 -- Dragging logic
 local dragging, dragInput, dragStart, startPos
 local function update(input)
